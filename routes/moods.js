@@ -16,20 +16,30 @@ router.get('/', async (req, res) => {
   }
 })
 
+// Push name
+// router.post('/page2', (req, res) => {
+//   console.log(req.body)
+//   const name = req.body
+//   res.render('page2', name)
+// })
+
 // Generate random comments - second page
-router.get('/test', async (req, res) => {
-  try {
-    const comments = await db.getAllComments()
-    const viewData = { comments }
-    function getRandomInt (max) {
-      return Math.floor(Math.random() * max)
-    }
-    res.redirect(`/${getRandomInt(10) + 1}`)
-  } catch (error) {
-    res.redirect('/error')
-    console.error(error)
-  }
+router.get('/page2', (req, res) => {
+  // const viewData = {
+  //   name: 'Steve Puce',
+  //   colour: 'Shamrock Green',
+  //   mood: 'You are feeling giddy, cos you made it to FriYAY and you are thriving.',
+  //   comment: 'Validate your success and go sing your heart out tonight!!'
+  // }
+  // res.render('page2', viewData)
+  res.send('hi')
 })
+// try {
+//   const comments = await db.getAllComments()
+//   const viewData = { comments }
+//   function getRandomInt (max) {
+//     return Math.floor(Math.random() * max)
+//   }
 
 // Our routes go here
 
