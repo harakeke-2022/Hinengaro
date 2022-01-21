@@ -30,10 +30,6 @@ server.set('view engine', 'hbs')
  * define the routes
  *************************/
 
-server.get('/', (req, res) => {
-  res.redirect('/homepage')
-})
-
-server.use('/homePage', moods)
+server.use('/', moods)
 // server.use('/schedule', scheduleRoutes)
 // server.use('/events', eventRoutes)

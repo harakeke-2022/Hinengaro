@@ -25,14 +25,13 @@ router.get('/', async (req, res) => {
 
 // Generate random comments - second page
 router.get('/page2', (req, res) => {
-  // const viewData = {
-  //   name: 'Steve Puce',
-  //   colour: 'Shamrock Green',
-  //   mood: 'You are feeling giddy, cos you made it to FriYAY and you are thriving.',
-  //   comment: 'Validate your success and go sing your heart out tonight!!'
-  // }
-  // res.render('page2', viewData)
-  res.send('hi')
+  const viewData = {
+    user: 'Steve Puce',
+    colour: 'Shamrock Green',
+    mood: 'You are feeling giddy, cos you made it to FriYAY and you are thriving.',
+    comment: 'Validate your success and go sing your heart out tonight!!'
+  }
+  res.render('page2', viewData)
 })
 // try {
 //   const comments = await db.getAllComments()
