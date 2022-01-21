@@ -3,7 +3,7 @@ const express = require('express')
 const hbs = require('express-handlebars')
 
 // This is where we know about the routes in the server
-const mainRoutePage = require('./routes/mainRoutePage.js')
+const moods = require('./routes/moods.js')
 
 // const scheduleRoutes = require('./routes/schedule.js')
 // const eventRoutes = require('./routes/events.js')
@@ -31,9 +31,9 @@ server.set('view engine', 'hbs')
  *************************/
 
 server.get('/', (req, res) => {
-  res.redirect('/schedule/friday')
+  res.redirect('/homepage')
 })
 
-server.use('/homePage', mainRoutePage)
+server.use('/homePage', moods)
 // server.use('/schedule', scheduleRoutes)
 // server.use('/events', eventRoutes)

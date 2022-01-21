@@ -9,9 +9,7 @@ module.exports = router
 // Our main page routes go here
 router.get('/', async (req, res) => {
   try {
-    const comments = await db.getAllComments()
-    const viewData = { comments }
-    res.render('showComments', viewData)
+    res.render('homepage')
   } catch (error) {
     res.redirect('/error')
     console.error(error)
@@ -19,7 +17,7 @@ router.get('/', async (req, res) => {
 })
 
 // Generate random comments - second page
-router.get('/', async (req, res) => {
+router.get('/test', async (req, res) => {
   try {
     const comments = await db.getAllComments()
     const viewData = { comments }

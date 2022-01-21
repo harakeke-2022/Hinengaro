@@ -1,8 +1,8 @@
 const config = require('./knexfile').development
 const database = require('knex')(config)
 
-function getAllLocations (db = database) {
-  return db('locations')
+function getHomepage (db = database) {
+  return db('')
     .select()
 }
 
