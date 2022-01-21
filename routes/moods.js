@@ -22,21 +22,6 @@ router.get('/', async (req, res) => {
 //   const name = req.body
 //   res.render('page2', name)
 // })
-<<<<<<< HEAD
-
-// Generate random comments - second page
-router.get('/page2', (req, res) => {
-  // const viewData = {
-  //   name: 'Steve Puce',
-  //   colour: 'Shamrock Green',
-  //   mood: 'You are feeling giddy, cos you made it to FriYAY and you are thriving.',
-  //   comment: 'Validate your success and go sing your heart out tonight!!'
-  // }
-  // res.render('page2', viewData)
-  res.send('hi')
-})
-
-=======
 
 // Generate random comments - second page
 router.get('/page2', (req, res) => {
@@ -55,11 +40,10 @@ router.get('/page2', (req, res) => {
 //     return Math.floor(Math.random() * max)
 //   }
 
->>>>>>> ca7525fcf7beeb7a6e7c7ec628fd80758d5a5541
 // Our routes go here
 
 //   router.get('/:id', async (req, res) => {
-//     const id = Number(req.params.id) - 1
+//     const id = Nu>>>>>>> ca7525fcf7beeb7a6e7c7ec628fd80758d5a5541mber(req.params.id) - 1
 //     try {
 //       const comments = await db.getAllComments()
 //       const viewData = { comments }
